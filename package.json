@@ -1,0 +1,33 @@
+{
+  "name": "first-last",
+  "version": "0.0.1",
+  "description": "Two array functions for selecting first or last n elements.",
+  "main": "dist/index.min.js",
+  "files": [
+    "dist/*"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "ts-node-dev --respawn src/test.ts",
+    "build": "rmdir /s /Q dist & tsc && terser dist/index.js --output dist/index.min.js --config_file terserconfig.json --comments /^\\*\\n/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joker876/first-last.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joker876/first-last/issues"
+  },
+  "homepage": "https://github.com/joker876/first-last#readme",
+  "keywords": [
+    "array",
+    "last",
+    "first"
+  ],
+  "author": "joker876",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  }
+}
