@@ -1,6 +1,6 @@
 # folders
 node_modules
-dist
 
 # files
 package-lock.json
+dist/index.d.ts
