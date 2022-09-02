@@ -4,6 +4,10 @@ declare interface Array<T> {
      */
     last(): T;
     /**
+     * Returns the last element of the array.
+     */
+    last(n: 1): T;
+    /**
      * Returns the last *n* elements of the array.
      */
     last(n: number): T[];
@@ -26,9 +30,15 @@ declare interface Array<T> {
      */
     first(): T;
     /**
+     * Returns the first element of the array.
+     * 
+     * Works the same as doing `array[0]`.
+     */
+    first(n: 1): T;
+    /**
      * Returns the first *n* elements of the array.
      */
-    first(n: number): T | T[];
+    first(n: number): T[];
     /**
      * Returns the first element of the array that fulfills the predicate function.
      * @param n Amount of elements to return.
@@ -50,5 +60,5 @@ Array.prototype.last = function <T>(n?: number, predicateFn?: (value: T, index?:
 Array.prototype.first = function <T>(n?: number, predicateFn?: (value: T, index?: number, array?: T[]) => boolean): T | T[] {
     if (n == undefined) return this[0];
     if (n == 1) return this.filter(predicateFn ?? (() => true))[0];
-    return this.filter(predicateFn ?? (() => true)).slice(0, n - 1);
+    return this.filter(predicateFn ?? (() => true)).slice(0, n);
 }
