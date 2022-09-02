@@ -4,3 +4,5 @@ node_modules
 # files
 package-lock.json
 dist/index.d.ts
+dist/index.spec.js
+dist/index.spec.d.ts
