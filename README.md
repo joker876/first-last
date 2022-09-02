@@ -1,4 +1,5 @@
 # first & last
+[MIT License](http://img.shields.io/badge/license-MIT-blue.svg)
 [NPM](https://img.shields.io/npm/v/first-last.svg)
 
 Two array functions for selecting first or last n elements.
@@ -67,3 +68,8 @@ arr.first(3); // -> [ 'Cat', 'Dog', 'Frog' ]
 arr.first(1, v => v.length >= 4); // -> 'Frog'
 arr.first(2, v => v.length == 4); // -> [ 'Frog', 'Bird' ]
 ```
+
+
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license]: LICENSE.md
