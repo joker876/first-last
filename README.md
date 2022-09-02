@@ -10,7 +10,9 @@ npm install first-last --save
 ```
 
 ### Browser
-Coming soon
+```html
+<script src="https://joker876.github.io/first-last/dist/index.min.js"></script>
+```
 
 ## Usage
 ### Node
