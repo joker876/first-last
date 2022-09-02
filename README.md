@@ -17,7 +17,7 @@ Coming soon
 ```typescript
 require('first-last');
 // or
-import {} from 'first-last';
+import 'first-last';
 ```
 
 ### Browser
