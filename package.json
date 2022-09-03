@@ -10,7 +10,7 @@
   "scripts": {
     "test": "npm run build && npx jasmine",
     "start": "ts-node-dev --respawn src/index.ts",
-    "build": "rmdir /s /Q dist & tsc && terser dist/index.js --output dist/index.min.js --config_file terserconfig.json --comments /^\\*\\n/ && cd dist && del /f index.js"
+    "build": "rmdir /s /Q dist & tsc && terser dist/index.js --output dist/index.min.js --config_file terserconfig.json --comments /^\\*\\n/"
   },
   "repository": {
     "type": "git",
